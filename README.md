@@ -107,5 +107,5 @@ sea-config.json    Node.js SEA build configuration
 
 No additional files are required for this minimal Windows distribution.
 
-This tool was coded with AI.
-# clickNload-catcher
+This tool was built with AI.
+

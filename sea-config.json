@@ -1,0 +1,9 @@
+{
+  "main": "cnl-catcher.js",
+  "mainFormat": "commonjs",
+  "output": "clickNload.exe",
+  "disableExperimentalSEAWarning": true,
+  "useSnapshot": false,
+  "useCodeCache": false,
+  "execArgvExtension": "none"
+}

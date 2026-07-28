@@ -1,0 +1,18 @@
+{
+  "name": "clicknload-catcher",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Click'n'Load 1/2 receiver for Windows",
+  "main": "cnl-catcher.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node cnl-catcher.js",
+    "check": "node --check cnl-catcher.js",
+    "build": "node --build-sea sea-config.json"
+  },
+  "engines": {
+    "node": "26.5.x"
+  },
+  "packageManager": "npm@11.17.0",
+  "license": "UNLICENSED"
+}
