@@ -1,7 +1,7 @@
 # Click'n'Load Catcher for Windows
 
-This minimal distribution is designed exclusively for **Windows x64** and
-**Node.js 26.5.0**.
+I was fed up with the solutions that i could find on the Internet so i made something that just works.
+
 
 ## What does `clickNload.exe` do?
 
@@ -39,9 +39,6 @@ internet.
 The executable was created using the **Single Executable Application (SEA)**
 feature built into Node.js 26.5.0.
 
-The JavaScript source is not compiled completely into native machine code as it
-would be with languages such as C or Rust. Instead, Node.js:
-
 1. reads `sea-config.json`;
 2. loads `cnl-catcher.js` as the CommonJS entry point;
 3. prepares the application as an SEA payload;
@@ -52,9 +49,6 @@ This is why the executable is much larger than the JavaScript source file: it
 contains the Node.js runtime. A separate Node.js installation is therefore not
 required on the Windows computer that runs the finished executable.
 
-`useSnapshot` and `useCodeCache` are deliberately disabled. In addition,
-`execArgvExtension: "none"` prevents environment variables such as
-`NODE_OPTIONS` from changing the embedded runtime configuration.
 
 ## Rebuilding the executable
 
@@ -63,20 +57,6 @@ The build requires exactly:
 ```text
 Node.js 26.5.0
 npm 11.17.0
-```
-
-Verify the installed versions:
-
-```powershell
-node --version
-npm --version
-```
-
-Expected output:
-
-```text
-v26.5.0
-11.17.0
 ```
 
 Check the JavaScript syntax and rebuild the executable:
